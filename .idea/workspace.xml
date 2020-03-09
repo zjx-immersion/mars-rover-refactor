@@ -39,7 +39,18 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="go.sdk" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Go Test.Test_should_return_x_plus_1_given_given_command_is_M_and_facing_is_E in mars-rover-refactor/pkg/marsrover">
+    <configuration name="Test_should_return_x_plus_1_given_given_command_is_M_and_facing_is_E in mars-rover-refactor/pkg/marsrover" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="mars-rover-refactor" />
+      <working_directory value="$PROJECT_DIR$/pkg/marsrover" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="mars-rover-refactor/pkg/marsrover" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^Test_should_return_x_plus_1_given_given_command_is_M_and_facing_is_E$" />
+      <method v="2" />
+    </configuration>
     <configuration name="go test pkg" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="mars-rover-refactor" />
       <working_directory value="$PROJECT_DIR$/pkg" />
@@ -50,6 +61,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.Test_should_return_x_plus_1_given_given_command_is_M_and_facing_is_E in mars-rover-refactor/pkg/marsrover" />
         <item itemvalue="Go Test.go test pkg" />
       </list>
     </recent_temporary>
@@ -63,21 +75,25 @@
     <proxy>direct</proxy>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1398" height="226" key="GridCell.Tab.0.bottom" timestamp="1583724965742">
+    <state width="1398" height="226" key="GridCell.Tab.0.bottom" timestamp="1583744109313">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="226" key="GridCell.Tab.0.bottom/1440.0.1112.834/0.0.1440.900@0.0.1440.900" timestamp="1583724965742" />
-    <state width="1398" height="226" key="GridCell.Tab.0.center" timestamp="1583724965741">
+    <state width="1398" height="226" key="GridCell.Tab.0.bottom/1440.0.1112.834/0.0.1440.900@0.0.1440.900" timestamp="1583744109313" />
+    <state width="1398" height="226" key="GridCell.Tab.0.center" timestamp="1583744109311">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="226" key="GridCell.Tab.0.center/1440.0.1112.834/0.0.1440.900@0.0.1440.900" timestamp="1583724965741" />
-    <state width="1398" height="226" key="GridCell.Tab.0.left" timestamp="1583724965740">
+    <state width="1398" height="226" key="GridCell.Tab.0.center/1440.0.1112.834/0.0.1440.900@0.0.1440.900" timestamp="1583744109311" />
+    <state width="1398" height="226" key="GridCell.Tab.0.left" timestamp="1583744109310">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="226" key="GridCell.Tab.0.left/1440.0.1112.834/0.0.1440.900@0.0.1440.900" timestamp="1583724965740" />
-    <state width="1398" height="226" key="GridCell.Tab.0.right" timestamp="1583724965742">
+    <state width="1398" height="226" key="GridCell.Tab.0.left/1440.0.1112.834/0.0.1440.900@0.0.1440.900" timestamp="1583744109310" />
+    <state width="1398" height="226" key="GridCell.Tab.0.right" timestamp="1583744109312">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="226" key="GridCell.Tab.0.right/1440.0.1112.834/0.0.1440.900@0.0.1440.900" timestamp="1583724965742" />
+    <state width="1398" height="226" key="GridCell.Tab.0.right/1440.0.1112.834/0.0.1440.900@0.0.1440.900" timestamp="1583744109312" />
+    <state width="500" height="445" key="SwitcherDM" timestamp="1583744106482">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="500" height="445" key="SwitcherDM/1440.0.1112.834/0.0.1440.900@0.0.1440.900" timestamp="1583744106482" />
   </component>
 </project>
