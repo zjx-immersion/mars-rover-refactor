@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="11ada6b5-2774-489a-991b-77d6d9a6aaca" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/marsrover/assert.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/marsrover/assert/assert.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/marsrover/coordinate.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/marsrover/mars_rover/coordinate.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/marsrover/directions.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/marsrover/mars_rover/directions.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/marsrover/marsover_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/marsrover/mars_rover/marsover_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/marsrover/marsrover.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/marsrover/mars_rover/marsrover.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,22 +130,22 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="415" y="69" key="#go_test_mars-rover-refactor/pkg/marsrover/1440.0.1112.834/0.0.1440.900@0.0.1440.900" timestamp="1583771871566" />
-    <state width="1398" height="226" key="GridCell.Tab.0.bottom" timestamp="1583771884648">
+    <state width="1398" height="226" key="GridCell.Tab.0.bottom" timestamp="1583771962549">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="226" key="GridCell.Tab.0.bottom/1440.0.1112.834/0.0.1440.900@0.0.1440.900" timestamp="1583771884648" />
-    <state width="1398" height="226" key="GridCell.Tab.0.center" timestamp="1583771884647">
+    <state width="1398" height="226" key="GridCell.Tab.0.bottom/1440.0.1112.834/0.0.1440.900@0.0.1440.900" timestamp="1583771962549" />
+    <state width="1398" height="226" key="GridCell.Tab.0.center" timestamp="1583771962547">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="226" key="GridCell.Tab.0.center/1440.0.1112.834/0.0.1440.900@0.0.1440.900" timestamp="1583771884647" />
-    <state width="1398" height="226" key="GridCell.Tab.0.left" timestamp="1583771884646">
+    <state width="1398" height="226" key="GridCell.Tab.0.center/1440.0.1112.834/0.0.1440.900@0.0.1440.900" timestamp="1583771962547" />
+    <state width="1398" height="226" key="GridCell.Tab.0.left" timestamp="1583771962546">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="226" key="GridCell.Tab.0.left/1440.0.1112.834/0.0.1440.900@0.0.1440.900" timestamp="1583771884646" />
-    <state width="1398" height="226" key="GridCell.Tab.0.right" timestamp="1583771884648">
+    <state width="1398" height="226" key="GridCell.Tab.0.left/1440.0.1112.834/0.0.1440.900@0.0.1440.900" timestamp="1583771962546" />
+    <state width="1398" height="226" key="GridCell.Tab.0.right" timestamp="1583771962548">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="226" key="GridCell.Tab.0.right/1440.0.1112.834/0.0.1440.900@0.0.1440.900" timestamp="1583771884648" />
+    <state width="1398" height="226" key="GridCell.Tab.0.right/1440.0.1112.834/0.0.1440.900@0.0.1440.900" timestamp="1583771962548" />
     <state width="500" height="445" key="SwitcherDM" timestamp="1583771500526">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

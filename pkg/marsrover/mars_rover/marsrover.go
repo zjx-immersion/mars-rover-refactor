@@ -7,7 +7,7 @@ type MarsRover struct {
 	direction  Direction
 }
 
-func initLocation(initLocationPointOfX, initLocationPointOfY int, initDirection string) MarsRover {
+func NewMarsRover(initLocationPointOfX, initLocationPointOfY int, initDirection string) MarsRover {
 	return MarsRover{
 		Coordinate{initLocationPointOfX, initLocationPointOfY},
 		NewDirection(initDirection)}
