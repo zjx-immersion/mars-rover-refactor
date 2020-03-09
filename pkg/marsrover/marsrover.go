@@ -53,22 +53,13 @@ func (m *MarsRoverNew) turnLeft() {
 }
 
 func (m *MarsRoverNew) moveForward() {
-	if m.direction == "E" {
-		//m.coordinate.locationPointOfX += 1
-		m.coordinate.move(NewCoordinate(1, 0))
-	} else if m.direction == "W" {
-		//m.coordinate.locationPointOfX -= 1
-		m.coordinate.move(NewCoordinate(-1, 0))
-
-	} else if m.direction == "N" {
-		//m.coordinate.locationPointOfY += 1
-		m.coordinate.move(NewCoordinate(0, 1))
-
-	} else if m.direction == "S" {
-		//m.coordinate.locationPointOfY -= 1
-		m.coordinate.move(NewCoordinate(0, -1))
-
+	directionMoveCoordinateMap := map[string]Coordinate{
+		"E": NewCoordinate(1, 0),
+		"W": NewCoordinate(-1, 0),
+		"N": NewCoordinate(0, 1),
+		"S": NewCoordinate(0, -1),
 	}
+	m.coordinate.move(directionMoveCoordinateMap[m.direction])
 }
 
 func NewCoordinate(locationPointOfX, locationPointOfY int) Coordinate {
