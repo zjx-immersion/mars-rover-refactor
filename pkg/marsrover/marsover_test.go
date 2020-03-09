@@ -2,13 +2,6 @@ package marsrover
 
 import "testing"
 
-func Test_should_return_init_place_given_command_is_empty(t *testing.T) {
-	x, y, d := sendCommands([]byte{})
-	assertEqual(0, x, t)
-	assertEqual(0, y, t)
-	assertEqual("N", d, t)
-}
-
 func Test_should_return_x_plus_1_given_given_command_is_M_and_facing_is_E(t *testing.T) {
 	initLocation(0, 0, "E")
 	x, _, _ := sendCommands([]byte{'M'})
