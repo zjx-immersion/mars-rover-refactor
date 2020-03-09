@@ -1,4 +1,4 @@
-package marsrover
+package mars_rover
 
 type Coordinate struct {
 	locationPointOfX int

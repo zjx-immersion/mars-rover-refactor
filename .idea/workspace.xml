@@ -3,9 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="11ada6b5-2774-489a-991b-77d6d9a6aaca" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/marsrover/command_parser.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/marsrover/commands/command_parser.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/marsrover/interfaces.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/marsrover/commands/interfaces.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/marsrover/marsrover.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/marsrover/marsrover.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/marsrover/assert.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/marsrover/assert/assert.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/marsrover/coordinate.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/marsrover/mars_rover/coordinate.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/marsrover/directions.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/marsrover/mars_rover/directions.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/marsrover/marsover_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/marsrover/mars_rover/marsover_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/marsrover/marsrover.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/marsrover/mars_rover/marsrover.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,11 +56,13 @@
       <recent name="$PROJECT_DIR$/pkg/marsrover" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pkg/marsrover/assert" />
+      <recent name="$PROJECT_DIR$/pkg/marsrover/mars_rover" />
       <recent name="$PROJECT_DIR$/pkg/marsrover/commands" />
       <recent name="$PROJECT_DIR$/pkg/marsrover" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.go test mars-rover-refactor/pkg/marsrover">
+  <component name="RunManager" selected="Go Test.go test marsrover">
     <configuration name="Test_should_return_x_plus_1_given_given_command_is_M_and_facing_is_E in mars-rover-refactor/pkg/marsrover" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="mars-rover-refactor" />
       <working_directory value="$PROJECT_DIR$/pkg/marsrover" />
@@ -77,6 +81,16 @@
       <kind value="PACKAGE" />
       <package value="mars-rover-refactor/pkg/marsrover" />
       <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go test marsrover" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="mars-rover-refactor" />
+      <working_directory value="$PROJECT_DIR$/pkg/marsrover" />
+      <framework value="gotest" />
+      <kind value="DIRECTORY" />
+      <package value="mars-rover-refactor" />
+      <directory value="$PROJECT_DIR$/pkg/marsrover" />
       <filePath value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
@@ -100,6 +114,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.go test marsrover" />
         <item itemvalue="Go Test.go test mars-rover-refactor/pkg/marsrover" />
         <item itemvalue="Go Test.marsover_test.go" />
         <item itemvalue="Go Test.go test pkg" />
@@ -116,22 +131,26 @@
     <proxy>direct</proxy>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1398" height="226" key="GridCell.Tab.0.bottom" timestamp="1583771522814">
+    <state x="415" y="69" key="#go_test_mars-rover-refactor/pkg/marsrover" timestamp="1583771871566">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="226" key="GridCell.Tab.0.bottom/1440.0.1112.834/0.0.1440.900@0.0.1440.900" timestamp="1583771522814" />
-    <state width="1398" height="226" key="GridCell.Tab.0.center" timestamp="1583771522812">
+    <state x="415" y="69" key="#go_test_mars-rover-refactor/pkg/marsrover/1440.0.1112.834/0.0.1440.900@0.0.1440.900" timestamp="1583771871566" />
+    <state width="1398" height="226" key="GridCell.Tab.0.bottom" timestamp="1583771884648">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="226" key="GridCell.Tab.0.center/1440.0.1112.834/0.0.1440.900@0.0.1440.900" timestamp="1583771522812" />
-    <state width="1398" height="226" key="GridCell.Tab.0.left" timestamp="1583771522811">
+    <state width="1398" height="226" key="GridCell.Tab.0.bottom/1440.0.1112.834/0.0.1440.900@0.0.1440.900" timestamp="1583771884648" />
+    <state width="1398" height="226" key="GridCell.Tab.0.center" timestamp="1583771884647">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="226" key="GridCell.Tab.0.left/1440.0.1112.834/0.0.1440.900@0.0.1440.900" timestamp="1583771522811" />
-    <state width="1398" height="226" key="GridCell.Tab.0.right" timestamp="1583771522813">
+    <state width="1398" height="226" key="GridCell.Tab.0.center/1440.0.1112.834/0.0.1440.900@0.0.1440.900" timestamp="1583771884647" />
+    <state width="1398" height="226" key="GridCell.Tab.0.left" timestamp="1583771884646">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="226" key="GridCell.Tab.0.right/1440.0.1112.834/0.0.1440.900@0.0.1440.900" timestamp="1583771522813" />
+    <state width="1398" height="226" key="GridCell.Tab.0.left/1440.0.1112.834/0.0.1440.900@0.0.1440.900" timestamp="1583771884646" />
+    <state width="1398" height="226" key="GridCell.Tab.0.right" timestamp="1583771884648">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="226" key="GridCell.Tab.0.right/1440.0.1112.834/0.0.1440.900@0.0.1440.900" timestamp="1583771884648" />
     <state width="500" height="445" key="SwitcherDM" timestamp="1583771500526">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

@@ -1,4 +1,4 @@
-package marsrover
+package mars_rover
 
 import "mars-rover-refactor/pkg/marsrover/commands"
 
