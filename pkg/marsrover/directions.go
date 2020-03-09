@@ -1,37 +1,68 @@
 package marsrover
 
 type Direction struct {
-	direction string
+	directionDisplay string
 }
+
+type DirectionType int
+
+const (
+	N DirectionType = iota
+	E
+	S
+	W
+)
 
 func NewDirection(direction string) Direction {
 	return Direction{direction}
 }
 
+func valueOf(m *Direction) DirectionType {
+	return map[string]DirectionType{
+		"N": N,
+		"E": E,
+		"S": S,
+		"W": W,
+	}[m.directionDisplay]
+}
+
+func (t DirectionType) string() string {
+	return [...]string{"N", "E", "S", "W"}[t]
+}
+
 func (direction Direction) string() string {
-	return direction.direction
+	return direction.directionDisplay
 }
 
 func (m *Direction) turnRight() {
-	if m.direction == "E" {
-		m.direction = "S"
-	} else if m.direction == "S" {
-		m.direction = "W"
-	} else if m.direction == "W" {
-		m.direction = "N"
-	} else if m.direction == "N" {
-		m.direction = "E"
+	directionType := valueOf(m)
+	newDirection := directionType + 1
+	if newDirection == 4 {
+		newDirection = 0
+	}
+	m.directionDisplay = newDirection.string()
+}
+
+func (m *Direction) turnRight2() {
+	if m.directionDisplay == "E" {
+		m.directionDisplay = "S"
+	} else if m.directionDisplay == "S" {
+		m.directionDisplay = "W"
+	} else if m.directionDisplay == "W" {
+		m.directionDisplay = "N"
+	} else if m.directionDisplay == "N" {
+		m.directionDisplay = "E"
 	}
 }
 
 func (m *Direction) turnLeft() {
-	if m.direction == "E" {
-		m.direction = "N"
-	} else if m.direction == "N" {
-		m.direction = "W"
-	} else if m.direction == "W" {
-		m.direction = "S"
-	} else if m.direction == "S" {
-		m.direction = "E"
+	if m.directionDisplay == "E" {
+		m.directionDisplay = "N"
+	} else if m.directionDisplay == "N" {
+		m.directionDisplay = "W"
+	} else if m.directionDisplay == "W" {
+		m.directionDisplay = "S"
+	} else if m.directionDisplay == "S" {
+		m.directionDisplay = "E"
 	}
 }
