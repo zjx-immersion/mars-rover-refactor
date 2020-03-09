@@ -54,7 +54,8 @@ func (m *MarsRoverNew) turnLeft() {
 
 func (m *MarsRoverNew) moveForward() {
 	if m.direction == "E" {
-		m.coordinate.locationPointOfX += 1
+		//m.coordinate.locationPointOfX += 1
+		m.coordinate.move(NewCoordinate(1, 0))
 	} else if m.direction == "W" {
 		m.coordinate.locationPointOfX -= 1
 	} else if m.direction == "N" {
@@ -62,4 +63,8 @@ func (m *MarsRoverNew) moveForward() {
 	} else if m.direction == "S" {
 		m.coordinate.locationPointOfY -= 1
 	}
+}
+
+func NewCoordinate(locationPointOfX, locationPointOfY int) Coordinate {
+	return Coordinate{locationPointOfX, locationPointOfY}
 }
