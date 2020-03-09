@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="11ada6b5-2774-489a-991b-77d6d9a6aaca" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/marsrover/command_parser.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/marsrover/command_parser.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/marsrover/command_parser.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/marsrover/commands/command_parser.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/marsrover/interfaces.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/marsrover/commands/interfaces.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pkg/marsrover/marsrover.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/marsrover/marsrover.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,6 +54,7 @@
       <recent name="$PROJECT_DIR$/pkg/marsrover" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pkg/marsrover/commands" />
       <recent name="$PROJECT_DIR$/pkg/marsrover" />
     </key>
   </component>
@@ -114,26 +116,26 @@
     <proxy>direct</proxy>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1398" height="226" key="GridCell.Tab.0.bottom" timestamp="1583770922971">
+    <state width="1398" height="226" key="GridCell.Tab.0.bottom" timestamp="1583771522814">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="226" key="GridCell.Tab.0.bottom/1440.0.1112.834/0.0.1440.900@0.0.1440.900" timestamp="1583770922971" />
-    <state width="1398" height="226" key="GridCell.Tab.0.center" timestamp="1583770922969">
+    <state width="1398" height="226" key="GridCell.Tab.0.bottom/1440.0.1112.834/0.0.1440.900@0.0.1440.900" timestamp="1583771522814" />
+    <state width="1398" height="226" key="GridCell.Tab.0.center" timestamp="1583771522812">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="226" key="GridCell.Tab.0.center/1440.0.1112.834/0.0.1440.900@0.0.1440.900" timestamp="1583770922969" />
-    <state width="1398" height="226" key="GridCell.Tab.0.left" timestamp="1583770922968">
+    <state width="1398" height="226" key="GridCell.Tab.0.center/1440.0.1112.834/0.0.1440.900@0.0.1440.900" timestamp="1583771522812" />
+    <state width="1398" height="226" key="GridCell.Tab.0.left" timestamp="1583771522811">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="226" key="GridCell.Tab.0.left/1440.0.1112.834/0.0.1440.900@0.0.1440.900" timestamp="1583770922968" />
-    <state width="1398" height="226" key="GridCell.Tab.0.right" timestamp="1583770922970">
+    <state width="1398" height="226" key="GridCell.Tab.0.left/1440.0.1112.834/0.0.1440.900@0.0.1440.900" timestamp="1583771522811" />
+    <state width="1398" height="226" key="GridCell.Tab.0.right" timestamp="1583771522813">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="226" key="GridCell.Tab.0.right/1440.0.1112.834/0.0.1440.900@0.0.1440.900" timestamp="1583770922970" />
-    <state width="500" height="445" key="SwitcherDM" timestamp="1583771030570">
+    <state width="1398" height="226" key="GridCell.Tab.0.right/1440.0.1112.834/0.0.1440.900@0.0.1440.900" timestamp="1583771522813" />
+    <state width="500" height="445" key="SwitcherDM" timestamp="1583771500526">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="500" height="445" key="SwitcherDM/1440.0.1112.834/0.0.1440.900@0.0.1440.900" timestamp="1583771030570" />
+    <state width="500" height="445" key="SwitcherDM/1440.0.1112.834/0.0.1440.900@0.0.1440.900" timestamp="1583771500526" />
     <state x="500" y="36" key="com.goide.refactor.move.GoMoveDeclarationDialog" timestamp="1583755659867">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

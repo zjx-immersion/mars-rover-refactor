@@ -1,5 +1,7 @@
 package marsrover
 
+import "mars-rover-refactor/pkg/marsrover/commands"
+
 type MarsRover struct {
 	coordinate Coordinate
 	direction  Direction
@@ -13,22 +15,22 @@ func initLocation(initLocationPointOfX, initLocationPointOfY int, initDirection 
 
 func (m *MarsRover) sendCommand(commandStrs []byte) (int, int, string) {
 
-	var commanders = parseCommands(commandStrs)
+	var commanders = commands.ParseCommands(commandStrs)
 	for _, commander := range commanders {
-		commander.execute(m)
+		commander.Execute(m)
 	}
 	return m.coordinate.locationPointOfX, m.coordinate.locationPointOfY, m.direction.string()
 }
 
-func (m *MarsRover) turnRight() {
+func (m *MarsRover) TurnRight() {
 	m.direction.turnRight()
 }
 
-func (m *MarsRover) turnLeft() {
+func (m *MarsRover) TurnLeft() {
 	m.direction.turnLeft()
 }
 
-func (m *MarsRover) moveForward() {
+func (m *MarsRover) MoveForward() {
 	newCoordinate := m.direction.produceForwardCoordinate()
 	m.coordinate.move(newCoordinate)
 }

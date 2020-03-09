@@ -1,4 +1,4 @@
-package marsrover
+package commands
 
 type CommandParser struct{}
 
@@ -8,7 +8,7 @@ var commanderMap = map[byte]Commander{
 	'R': TurnRightCommand{},
 }
 
-func parseCommands(commands []byte) []Commander {
+func ParseCommands(commands []byte) []Commander {
 	var commanders []Commander
 
 	for _, cmd := range commands {
@@ -21,20 +21,20 @@ func parseCommands(commands []byte) []Commander {
 type TurnLeftCommand struct {
 }
 
-func (commander TurnLeftCommand) execute(rover IMarsRover) {
-	rover.turnLeft()
+func (commander TurnLeftCommand) Execute(rover IMarsRover) {
+	rover.TurnLeft()
 }
 
 type TurnRightCommand struct {
 }
 
-func (commander TurnRightCommand) execute(rover IMarsRover) {
-	rover.turnRight()
+func (commander TurnRightCommand) Execute(rover IMarsRover) {
+	rover.TurnRight()
 }
 
 type MoveForwardCommand struct {
 }
 
-func (commander MoveForwardCommand) execute(rover IMarsRover) {
-	rover.moveForward()
+func (commander MoveForwardCommand) Execute(rover IMarsRover) {
+	rover.MoveForward()
 }
