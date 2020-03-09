@@ -9,13 +9,13 @@ const (
 	W
 )
 
-var directionStrs = [...]string{"N", "E", "S", "W"}
+var directionDisplays = [...]string{"N", "E", "S", "W"}
 
 var diractionMap = map[string]Direction{
-	directionStrs[N]: N,
-	directionStrs[E]: E,
-	directionStrs[S]: S,
-	directionStrs[W]: W,
+	directionDisplays[N]: N,
+	directionDisplays[E]: E,
+	directionDisplays[S]: S,
+	directionDisplays[W]: W,
 }
 
 func NewDirection(direction string) Direction {
@@ -26,25 +26,35 @@ func valueOf(m string) Direction {
 	return diractionMap[m]
 }
 
-func (t Direction) string() string {
+func (d Direction) string() string {
 
-	return directionStrs[t]
+	return directionDisplays[d]
 }
 
-func (m *Direction) turnRight() {
-	//directionType := valueOf(m)
-	newDirection := *m + 1
+func (d *Direction) turnRight() {
+	//directionType := valueOf(d)
+	newDirection := *d + 1
 	if newDirection > 3 {
 		newDirection = 0
 	}
-	*m = newDirection
+	*d = newDirection
 }
 
-func (m *Direction) turnLeft() {
-	//directionType := valueOf(m)
-	newDirection := *m - 1
+func (d *Direction) turnLeft() {
+	//directionType := valueOf(d)
+	newDirection := *d - 1
 	if newDirection < 0 {
 		newDirection = 3
 	}
-	*m = newDirection
+	*d = newDirection
+}
+
+func (d *Direction) produceForwardCoordinate() Coordinate {
+	directionMoveCoordinateMap := map[Direction]Coordinate{
+		E: NewCoordinate(1, 0),
+		W: NewCoordinate(-1, 0),
+		N: NewCoordinate(0, 1),
+		S: NewCoordinate(0, -1),
+	}
+	return directionMoveCoordinateMap[*d]
 }
