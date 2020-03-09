@@ -9,11 +9,13 @@ const (
 	W
 )
 
+var directionStrs = [...]string{"N", "E", "S", "W"}
+
 var diractionMap = map[string]Direction{
-	"N": N,
-	"E": E,
-	"S": S,
-	"W": W,
+	directionStrs[N]: N,
+	directionStrs[E]: E,
+	directionStrs[S]: S,
+	directionStrs[W]: W,
 }
 
 func NewDirection(direction string) Direction {
@@ -25,7 +27,8 @@ func valueOf(m string) Direction {
 }
 
 func (t Direction) string() string {
-	return [...]string{"N", "E", "S", "W"}[t]
+
+	return directionStrs[t]
 }
 
 func (m *Direction) turnRight() {
