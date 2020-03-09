@@ -2,14 +2,14 @@ package marsrover
 
 type CommandParser struct{}
 
+var commanderMap = map[byte]Commander{
+	'M': MoveForwardCommand{},
+	'L': TurnLeftCommand{},
+	'R': TurnRightCommand{},
+}
+
 func parseCommands(commands []byte) []Commander {
 	var commanders []Commander
-
-	commanderMap := map[byte]Commander{
-		'M': MoveForwardCommand{},
-		'L': TurnLeftCommand{},
-		'R': TurnRightCommand{},
-	}
 
 	for _, cmd := range commands {
 
