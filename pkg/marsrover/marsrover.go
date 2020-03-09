@@ -6,13 +6,13 @@ const rightCommand = 'R'
 
 type MarsRoverNew struct {
 	coordinate Coordinate
-	direction  string
+	direction  Direction
 }
 
 func initLocation(initLocationPointOfX, initLocationPointOfY int, initDirection string) MarsRoverNew {
 	return MarsRoverNew{
 		Coordinate{initLocationPointOfX, initLocationPointOfY},
-		initDirection}
+		NewDirection(initDirection)}
 }
 
 func (m *MarsRoverNew) sendCommand(commands []byte) (int, int, string) {
@@ -25,7 +25,7 @@ func (m *MarsRoverNew) sendCommand(commands []byte) (int, int, string) {
 			m.turnRight()
 		}
 	}
-	return m.coordinate.locationPointOfX, m.coordinate.locationPointOfY, m.direction
+	return m.coordinate.locationPointOfX, m.coordinate.locationPointOfY, m.direction.string()
 }
 
 func (m *MarsRoverNew) turnRight() {
@@ -59,7 +59,7 @@ func (m *MarsRoverNew) moveForward() {
 		"N": NewCoordinate(0, 1),
 		"S": NewCoordinate(0, -1),
 	}
-	m.coordinate.move(directionMoveCoordinateMap[m.direction])
+	m.coordinate.move(directionMoveCoordinateMap[m.direction.string()])
 }
 
 func NewCoordinate(locationPointOfX, locationPointOfY int) Coordinate {
