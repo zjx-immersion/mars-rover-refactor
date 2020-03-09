@@ -2,14 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11ada6b5-2774-489a-991b-77d6d9a6aaca" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/pkg/marsrover/coordinate.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/marsrover/marsover_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/marsrover/marsover_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pkg/marsrover/marsrover.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/marsrover/marsrover.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
   </component>
   <component name="GOROOT" path="/usr/local/opt/go/libexec" />
   <component name="Git.Settings">
@@ -25,6 +32,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -87,25 +95,25 @@
     <proxy>direct</proxy>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1398" height="226" key="GridCell.Tab.0.bottom" timestamp="1583745345621">
+    <state width="1398" height="226" key="GridCell.Tab.0.bottom" timestamp="1583747497993">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="226" key="GridCell.Tab.0.bottom/1440.0.1112.834/0.0.1440.900@0.0.1440.900" timestamp="1583745345621" />
-    <state width="1398" height="226" key="GridCell.Tab.0.center" timestamp="1583745345619">
+    <state width="1398" height="226" key="GridCell.Tab.0.bottom/1440.0.1112.834/0.0.1440.900@0.0.1440.900" timestamp="1583747497993" />
+    <state width="1398" height="226" key="GridCell.Tab.0.center" timestamp="1583747497991">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="226" key="GridCell.Tab.0.center/1440.0.1112.834/0.0.1440.900@0.0.1440.900" timestamp="1583745345619" />
-    <state width="1398" height="226" key="GridCell.Tab.0.left" timestamp="1583745345617">
+    <state width="1398" height="226" key="GridCell.Tab.0.center/1440.0.1112.834/0.0.1440.900@0.0.1440.900" timestamp="1583747497991" />
+    <state width="1398" height="226" key="GridCell.Tab.0.left" timestamp="1583747497990">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="226" key="GridCell.Tab.0.left/1440.0.1112.834/0.0.1440.900@0.0.1440.900" timestamp="1583745345617" />
-    <state width="1398" height="226" key="GridCell.Tab.0.right" timestamp="1583745345620">
+    <state width="1398" height="226" key="GridCell.Tab.0.left/1440.0.1112.834/0.0.1440.900@0.0.1440.900" timestamp="1583747497990" />
+    <state width="1398" height="226" key="GridCell.Tab.0.right" timestamp="1583747497992">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="226" key="GridCell.Tab.0.right/1440.0.1112.834/0.0.1440.900@0.0.1440.900" timestamp="1583745345620" />
-    <state width="500" height="445" key="SwitcherDM" timestamp="1583745089650">
+    <state width="1398" height="226" key="GridCell.Tab.0.right/1440.0.1112.834/0.0.1440.900@0.0.1440.900" timestamp="1583747497992" />
+    <state width="500" height="445" key="SwitcherDM" timestamp="1583747023990">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="500" height="445" key="SwitcherDM/1440.0.1112.834/0.0.1440.900@0.0.1440.900" timestamp="1583745089650" />
+    <state width="500" height="445" key="SwitcherDM/1440.0.1112.834/0.0.1440.900@0.0.1440.900" timestamp="1583747023990" />
   </component>
 </project>
