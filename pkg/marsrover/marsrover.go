@@ -57,11 +57,17 @@ func (m *MarsRoverNew) moveForward() {
 		//m.coordinate.locationPointOfX += 1
 		m.coordinate.move(NewCoordinate(1, 0))
 	} else if m.direction == "W" {
-		m.coordinate.locationPointOfX -= 1
+		//m.coordinate.locationPointOfX -= 1
+		m.coordinate.move(NewCoordinate(-1, 0))
+
 	} else if m.direction == "N" {
-		m.coordinate.locationPointOfY += 1
+		//m.coordinate.locationPointOfY += 1
+		m.coordinate.move(NewCoordinate(0, 1))
+
 	} else if m.direction == "S" {
-		m.coordinate.locationPointOfY -= 1
+		//m.coordinate.locationPointOfY -= 1
+		m.coordinate.move(NewCoordinate(0, -1))
+
 	}
 }
 

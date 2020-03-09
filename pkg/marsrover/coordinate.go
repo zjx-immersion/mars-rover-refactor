@@ -6,6 +6,6 @@ type Coordinate struct {
 }
 
 func (c *Coordinate) move(coordinate Coordinate) {
-	c.locationPointOfX = coordinate.locationPointOfX
-	c.locationPointOfY = coordinate.locationPointOfY
+	c.locationPointOfX += coordinate.locationPointOfX
+	c.locationPointOfY += coordinate.locationPointOfY
 }
