@@ -29,12 +29,17 @@ func (m *MarsRover) sendCommand(commands []byte) (int, int, string) {
 }
 
 func (m *MarsRover) moveForward() {
+	directionMoveCoordinateMap := m.produceForwardCoordinate()
+	m.coordinate.move(directionMoveCoordinateMap[m.direction.string()])
+}
+
+func (m *MarsRover) produceForwardCoordinate() map[string]Coordinate {
 	directionMoveCoordinateMap := map[string]Coordinate{
 		"E": NewCoordinate(1, 0),
 		"W": NewCoordinate(-1, 0),
 		"N": NewCoordinate(0, 1),
 		"S": NewCoordinate(0, -1),
 	}
-	m.coordinate.move(directionMoveCoordinateMap[m.direction.string()])
+	return directionMoveCoordinateMap
 }
 
