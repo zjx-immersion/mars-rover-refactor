@@ -37,8 +37,17 @@ func (direction Direction) string() string {
 func (m *Direction) turnRight() {
 	directionType := valueOf(m)
 	newDirection := directionType + 1
-	if newDirection == 4 {
+	if newDirection > 3 {
 		newDirection = 0
+	}
+	m.directionDisplay = newDirection.string()
+}
+
+func (m *Direction) turnLeft() {
+	directionType := valueOf(m)
+	newDirection := directionType - 1
+	if newDirection < 0 {
+		newDirection = 3
 	}
 	m.directionDisplay = newDirection.string()
 }
@@ -55,7 +64,7 @@ func (m *Direction) turnRight2() {
 	}
 }
 
-func (m *Direction) turnLeft() {
+func (m *Direction) turnLeft2() {
 	if m.directionDisplay == "E" {
 		m.directionDisplay = "N"
 	} else if m.directionDisplay == "N" {
