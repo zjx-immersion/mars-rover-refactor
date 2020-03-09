@@ -6,17 +6,11 @@ type MarsRover struct {
 	direction        string
 }
 
-var marsRover MarsRover
-
-func initLocation(initLocationPointOfX, initLocationPointOfY int, initDirection string) {
-	marsRover = MarsRover{initLocationPointOfX, initLocationPointOfY, initDirection}
+func initLocation(initLocationPointOfX, initLocationPointOfY int, initDirection string) MarsRover {
+	return MarsRover{initLocationPointOfX, initLocationPointOfY, initDirection}
 }
 
-func sendCommands(commands []byte) (int, int, string) {
-	return marsRover.handleCommand(commands)
-}
-
-func (m *MarsRover) handleCommand(commands []byte) (int, int, string) {
+func (m *MarsRover) sendCommand(commands []byte) (int, int, string) {
 	for _, cmd := range commands {
 		if cmd == 'M' {
 			m.moveForward()
